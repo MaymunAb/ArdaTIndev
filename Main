@@ -125,7 +125,7 @@ Start.MouseEnter:Connect(function()
 
 		ButtonTween:Play()
 		wait(2)
-		loadstring(game:HttpGet(""))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MaymunAb/ArdaTIndev/main/GameScanner"))()
 	end)
 end)
 
