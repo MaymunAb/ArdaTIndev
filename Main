@@ -8,7 +8,7 @@ local Copyright = Instance.new("ImageLabel")
 local Name_2 = Instance.new("TextLabel")
 
 MainGui.Name = "MainGui"
-MainGui.Parent = game.CoreGui
+MainGui.Parent = game.StarterGui
 
 Frame.Parent = MainGui
 Frame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
@@ -98,26 +98,33 @@ Name_2.TextScaled = true
 Name_2.TextSize = 9.000
 Name_2.TextWrapped = true
 
-Start.MouseButton1Down:Connect(function()
-	local TweenService = game:GetService("TweenService")
-	local Gui = Frame
+Start.MouseEnter:Connect(function()
+	Start.BackgroundColor = Color3.new(70,70,70)
+	Start.MouseButton1Down:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local Gui = Frame
 
-	local info = TweenInfo.new(
-		2,
-		Enum.EasingStyle.Sine,
-		Enum.EasingDirection.Out,
-		0, 
-		false, 
-		0 
-	)
+		local info = TweenInfo.new(
+			2,
+			Enum.EasingStyle.Sine,
+			Enum.EasingDirection.Out,
+			0, 
+			false, 
+			0 
+		)
 
-	local Goals ={
-		Size = UDim2.new(0, 0,0, 0); 
-	}
+		local Goals ={
+			Size = UDim2.new(0, 0,0, 0); 
+		}
 
-	local ButtonTween = TweenService:Create(Gui, info, Goals)
-	
-	ButtonTween:Play()
-	wait(2)
-	loadstring(game:HttpGet(""))()
+		local ButtonTween = TweenService:Create(Gui, info, Goals)
+
+		ButtonTween:Play()
+		wait(2)
+		loadstring(game:HttpGet(""))()
+	end)
+end)
+
+Start.MouseLeave:Connect(function()
+	Start.BackgroundColor = Color3.new(60,60,60)
 end)
