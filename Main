@@ -103,7 +103,7 @@ Name_2.TextSize = 9.000
 Name_2.TextWrapped = true
 
 Start.MouseEnter:Connect(function()
-	Start.BackgroundColor = Color3.new(70,70,70)
+	Start.BackgroundColor = BrickColor.new(70,70,70)
 	Start.MouseButton1Down:Connect(function()
 		local TweenService = game:GetService("TweenService")
 		local Gui = Frame
@@ -130,5 +130,5 @@ Start.MouseEnter:Connect(function()
 end)
 
 Start.MouseLeave:Connect(function()
-	Start.BackgroundColor = Color3.new(60,60,60)
+	Start.BackgroundColor = BrickColor.new(60,60,60)
 end)
