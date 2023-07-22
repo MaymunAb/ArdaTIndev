@@ -17,6 +17,10 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.373524427, 0, 0.348790318, 0)
 Frame.Size = UDim2.new(0.252951086, 0, 0.302419364, 0)
 
+Frame.Active = true
+Frame.Draggable = true
+Frame.Visible = true
+
 Name.Name = "Name"
 Name.Parent = Frame
 Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
