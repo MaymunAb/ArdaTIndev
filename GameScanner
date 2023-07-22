@@ -1,7 +1,6 @@
 if game.GameId == 6441847031 then
-	
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/MaymunAb/ArdaTIndev/main/Chaos'))()
 end
-
 if game.GameId == 189707 then
 	
 end
