@@ -8,7 +8,7 @@ local Copyright = Instance.new("ImageLabel")
 local Name_2 = Instance.new("TextLabel")
 
 MainGui.Name = "MainGui"
-MainGui.Parent = game.StarterGui
+MainGui.Parent = game.CoreGui
 
 Frame.Parent = MainGui
 Frame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
